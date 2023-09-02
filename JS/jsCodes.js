@@ -35,8 +35,9 @@ const manageCategories = async (categoryID) => {
   const remaining1 = minute % 60;
     return `${hour} hrs ${remaining1} mins ago`;
     }
-    else
-    return "";
+    else{
+        return "";
+    };
     
   
 
@@ -57,7 +58,7 @@ const manageCategories = async (categoryID) => {
                       class="w-full h-[250px]"
                     />
                   </figure>
-                  <p
+                  <p id="timePara"
                     class="flex absolute bg-[#171717] text-[#FFFFFF] rounded p-2 right-2 top-52"
                   >
                     ${timeConversion(music.others.posted_date)}
